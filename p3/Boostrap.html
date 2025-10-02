@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frizz_0404 • Instagram</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        .navbar-brand {
+            font-family: 'Instagram Sans', cursive;
+            font-size: 1.5rem;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(45deg, #fdf497, #fdf497, #fd5949, #d6249f, #285AEB);
+            padding: 3px;
+        }
+        .profile-pic-inner {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border: 3px solid white;
+        }
+        .highlight-circle {
+            width: 77px;
+            height: 77px;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            padding: 2px;
+        }
+        .highlight-inner {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border: 2px solid white;
+        }
+        .post-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .nav-tabs .nav-link {
+            color: #8e8e8e;
+            border: none;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .nav-tabs .nav-link.active {
+            color: #262626;
+            border-top: 1px solid #262626;
+            background: transparent;
+        }
+        .btn-instagram {
+            background-color: #0095f6;
+            color: white;
+            font-weight: 600;
+        }
+        .btn-instagram:hover {
+            background-color: #0081d6;
+            color: white;
+        }
+        .progress {
+            height: 4px;
+        }
+        .stat-number {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-instagram"></i> Instagram
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex mx-auto">
+                    <input class="form-control me-2" type="search" placeholder="Cari" style="background-color: #fafafa; border: 1px solid #dbdbdb;">
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-house-door fs-5"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-chat fs-5"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-plus-square fs-5"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-compass fs-5"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-heart fs-5"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <div class="rounded-circle bg-secondary d-flex align-items-center justify-content-center" style="width: 24px; height: 24px;">
+                                <i class="bi bi-person text-white" style="font-size: 12px;"></i>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Profile Header -->
+            <div class="col-md-4 text-center text-md-start">
+                <div class="profile-pic rounded-circle mx-auto mx-md-0 mb-3">
+                    <div class="profile-pic-inner rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="bi bi-person-fill text-muted" style="font-size: 60px;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start mb-3">
+                    <h2 class="me-3 mb-2 mb-md-0">frizz_0404</h2>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline-secondary btn-sm">Edit profil</button>
+                        <button class="btn btn-outline-secondary btn-sm">Bagikan profil</button>
+                        <button class="btn btn-outline-secondary btn-sm">
+                            <i class="bi bi-person-add"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-center justify-content-md-start mb-3">
+                    <div class="me-4 text-center">
+                        <div class="stat-number">1</div>
+                        <div class="text-muted">postingan</div>
+                    </div>
+                    <div class="me-4 text-center">
+                        <div class="stat-number">886</div>
+                        <div class="text-muted">pengikut</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="stat-number">680</div>
+                        <div class="text-muted">mengikuti</div>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <p class="mb-1 fw-bold">Apa yang Anda pikirkan?</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Profile Completion -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Lengkapi profil Anda</h5>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>2 DARI 4 SELESAI</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <span>Tambahkan nama</span>
+                                </div>
+                                <small class="text-muted ms-4">Tambahkan nama lengkap sehingga teman-teman akan mengenali Anda</small>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <span>Tambahkan Bio</span>
+                                </div>
+                                <small class="text-muted ms-4">Ceritakan sedikit tentang Anda kepada orang lain</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Highlights -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="d-flex overflow-auto pb-3">
+                    <div class="text-center me-4">
+                        <div class="highlight-circle rounded-circle mx-auto mb-2">
+                            <div class="highlight-inner rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                        </div>
+                        <div class="small">Baru</div>
+                    </div>
+                    <div class="text-center me-4">
+                        <div class="highlight-circle rounded-circle mx-auto mb-2">
+                            <div class="highlight-inner rounded-circle d-flex align-items-center justify-content-center">
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                        <div class="small">Sorotan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tabs -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <ul class="nav nav-tabs justify-content-center border-bottom-0" id="profileTabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="posts-tab" data-bs-toggle="tab" href="#posts">
+                            <i class="bi bi-grid-3x3 me-1"></i>
+                            <span class="d-none d-md-inline">POSTINGAN</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="saved-tab" data-bs-toggle="tab" href="#saved">
+                            <i class="bi bi-bookmark me-1"></i>
+                            <span class="d-none d-md-inline">TERSIMPAN</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tagged-tab" data-bs-toggle="tab" href="#tagged">
+                            <i class="bi bi-person-square me-1"></i>
+                            <span class="d-none d-md-inline">TANDAI</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="tab-content mt-3" id="profileTabsContent">
+                    <!-- Posts Tab -->
+                    <div class="tab-pane fade show active" id="posts">
+                        <div class="row">
+                            <div class="col-4 mb-3">
+                                <div class="ratio ratio-1x1 bg-light rounded">
+                                    <div class="d-flex align-items-center justify-content-center text-muted">
+                                        <i class="bi bi-image" style="font-size: 2rem;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 mb-3">
+                                <div class="ratio ratio-1x1 bg-light rounded">
+                                    <div class="d-flex align-items-center justify-content-center text-muted">
+                                        <i class="bi bi-play-btn" style="font-size: 2rem;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 mb-3">
+                                <div class="ratio ratio-1x1 bg-light rounded">
+                                    <div class="d-flex align-items-center justify-content-center text-muted">
+                                        <i class="bi bi-collection" style="font-size: 2rem;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center py-5">
+                            <i class="bi bi-camera display-1 text-muted"></i>
+                            <h3 class="mt-3">Bagikan Foto</h3>
+                            <p class="text-muted">Ambil atau unggah foto untuk dibagikan.</p>
+                            <button class="btn btn-instagram">Bagikan foto pertama</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Saved Tab -->
+                    <div class="tab-pane fade" id="saved">
+                        <div class="text-center py-5">
+                            <i class="bi bi-bookmark display-1 text-muted"></i>
+                            <h3 class="mt-3">Simpan</h3>
+                            <p class="text-muted">Simpan foto dan video yang ingin Anda lihat lagi. Tidak ada yang melihat yang Anda simpan.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Tagged Tab -->
+                    <div class="tab-pane fade" id="tagged">
+                        <div class="text-center py-5">
+                            <i class="bi bi-person-square display-1 text-muted"></i>
+                            <h3 class="mt-3">Foto Orang</h3>
+                            <p class="text-muted">Jika orang menandai Anda di foto, foto tersebut akan muncul di sini.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
