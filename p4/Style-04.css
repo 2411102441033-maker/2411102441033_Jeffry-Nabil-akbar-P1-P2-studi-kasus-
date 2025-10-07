@@ -1,0 +1,25 @@
+/* Bagian header atas */
+#atas {
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Judul khusus di dalam header */
+#atas h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0; /* hilangkan spasi default h1 */
+}
+
+/* Selektor Tag umum */
+h1 {
+    color: black;
+}
+
+/* Selektor Class isi */
+.isi {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: blue;
+}
