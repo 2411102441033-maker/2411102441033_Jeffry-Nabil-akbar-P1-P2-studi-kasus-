@@ -1,0 +1,152 @@
+/* Font */
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font dari Google Fonts */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Pengaturan Isi */
+.Konten {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden; /* Mencegah elemen keluar dari Konten */
+    padding: 0 20px;
+}
+
+/* Styling untuk Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 3px solid #007BFF;
+}
+
+header .nama-header {
+    float: left;
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header a:hover {
+    color: #007BFF;
+}
+
+/* Styling untuk Bagian Header Atas */
+.HeaderAtas {
+    background: #007BFF;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.HeaderAtas h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Styling Umum untuk Kartu/Bagian Isi */
+.KartuData {
+    background: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.KartuData h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+/* Styling Khusus untuk Bagian 'Tentang Saya' */
+#tentang {
+    text-align: justify;
+}
+
+.foto-profil {
+    margin-left: 400px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+    object-fit: cover; /* Memastikan gambar tidak gepeng */
+    border: 3px solid #007BFF;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk Grid Pengalaman */
+.grid-Pengalaman {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid responsif */
+    gap: 20px;
+}
+
+.PengalamanOrganisasi {
+    background: #f9f9f9;
+    border: 5px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+ 
+.tombol {
+    display: inline-block;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.tombol:hover {
+    background: #0056b3;
+}
+
+/* Styling untuk Bagian Kontak */
+#kontak ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#kontak li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Styling untuk Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: #333;
+    color: #fff;
+}
